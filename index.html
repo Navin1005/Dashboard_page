@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Dashboard</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .filter {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .filter input {
+            padding: 8px;
+            width: 300px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .filter button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .filter button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Company Dashboard</h1>
+
+    <!-- Filter Section -->
+    <div class="filter">
+        <input type="text" id="filterInput" placeholder="Search by Company Name...">
+        <button onclick="applyFilter()">Search</button>
+    </div>
+
+    <!-- Company Details Table -->
+    <h2>Company Details</h2>
+    <table id="companyTable">
+        <thead>
+            <tr>
+                <th>Logo</th>
+                <th>Company</th>
+                <th>Year Founded</th>
+                <th>Employees</th>
+                <th>HQ Country</th>
+                <th>HQ City</th>
+                <th>Subcategory</th>
+                <th>Customer Industries</th>
+                <th>Customer Size</th>
+                <th>Tech Stack</th>
+                <th>Pricing</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be dynamically populated -->
+        </tbody>
+    </table>
+
+    <!-- Funding Details Table -->
+<h2>Funding Details</h2>
+<table id="fundingTable">
+    <thead>
+        <tr>
+            <th>Amount Raised</th>
+            <th>Date of Funding</th>
+            <th>Funding Round</th>
+            <th>CEO</th>
+            <th>Lead Investor</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Data will be dynamically populated -->
+    </tbody>
+</table>
+
+    <footer>
+        © 2024 Company Dashboard
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
